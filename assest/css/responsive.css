@@ -1,0 +1,96 @@
+@media (min-width: 1024px) {
+    .mobile-menu-btn {
+        display: none;
+    }
+    
+}
+@media (min-width: 740px) and (max-width: 1023px) {
+    .mobile-menu-btn {
+        display: none;
+    }
+    .places-buy-btn {
+        padding: 15px 16px;
+    }
+    .contact-content-message {
+        padding: 14px;
+    }
+    .form-control {
+        padding: 14px;
+    }
+    .form-submit {
+        padding: 14px;
+    }
+    .socialss-list {
+        font-size: 28px;
+    }
+}
+@media (max-width: 739px) {
+    
+    .form-submit {
+        padding: 14px;
+    }
+    .contact-content-message {
+        padding: 14px;
+    }
+    .form-control {
+        padding: 14px;
+    }
+    .places-buy-btn {
+        padding: 15px 16px;
+    }
+    #header {
+        overflow: hidden;
+    }
+    #nav .subnav {
+        position: initial;
+    }
+    #nav {
+        display: block;
+        position: relative;
+    }
+    .mobile-menu-btn  {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    #nav li {
+        display: block;
+    }
+    .header__search-icon {
+        display: none;
+    }
+    .text-content {
+        display: none;
+    }
+    .member-list {
+        display: block;
+    }
+    .member-item {
+        width: 100%;
+    }
+    .member-name {
+        padding-top: 31px;
+    }
+    .member-img {
+        width: 60%;
+    }
+    .places-list {
+        display: block;
+    }
+    .place-item {
+        width: 100%;
+    }
+    .contact-content {
+        display: block;
+    }
+    .contact-content-info {
+        width: 100%;
+        padding-bottom: 16px;
+    }
+    .row {
+        display: block;
+    }
+    .column-2 {
+        width: 100%;
+    }
+}

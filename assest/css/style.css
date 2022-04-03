@@ -19,9 +19,10 @@
 }
 html {
     font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
 }
 #main {
-
+overflow: hidden;
 }
 #header {
 position: fixed;
@@ -76,13 +77,25 @@ z-index: 1;
     color: #000;
     background-color: #ccc;
 }
+.mobile-menu-btn,
 .header__search {
 float: right;
 padding: 0 23px;
 }
+.menu-btn-icon:hover {
+    color: #000;
+}
+.mobile-menu-btn:hover {
+    background-color: #ddd;
+}
 .header__search:hover {
     background-color: #f44336;
     cursor: pointer;
+}
+.menu-btn-icon {
+    color: #fff;
+    font-size: 15px;
+    line-height: 46px;
 }
 .header__search-icon {
     color: #fff;
@@ -122,9 +135,10 @@ color: #fff;
 }
 #content .content-section {
     width: 800px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding: 64px 0;
+    padding: 64px 16px 112px;
 }
 #content .section-heading {
 text-align: center;
@@ -144,6 +158,8 @@ font-weight: 300;
 font-size: 15px;
 line-height: 1.5;
 text-align: justify;
+padding: 0 16px;
+margin-bottom: 47px;
 }
 .member-list {
     display: flex;
@@ -196,7 +212,6 @@ margin-left: 16px;
     padding-top: 32px;
     margin-left: -8px;
     margin-right: -8px;
-    padding-bottom: 48px;
 }
 .place-item {
     padding: 0 8px;
@@ -236,13 +251,31 @@ margin-left: 16px;
     background-color: #000;
     color: #fff;
 font-size: 15px;
+border: none;
 }
 .places-buy-btn:hover {
     background-color: #ccc;
     color: #000;
 }
-#footer {
-
+.footer {
+text-align: center;
+font-size: 24px;
+padding: 64px 16px;
+}
+.socialss-list {
+}
+.socialss-list a {
+    color: rgba(0 0 0 / 0.6);
+}
+.socialss-list a:hover {
+    color: rgba(0 0 0 / 0.4);
+}
+.copyright {
+    margin-top: 15px;
+    color: rgba(0 0 0 / 0.6);
+}
+.copyright a {
+    color: rgba(0 0 0 / 0.6);
 }
 .modal {
     right: 0;
@@ -325,6 +358,7 @@ color: #fff;
 .modal-footer a {
     color: #2196f3;
 }
+
 .contact-content-info {
     font-size: 18px;
     line-height: 1.5;
@@ -360,6 +394,11 @@ color: #fff;
     border: none;
     float: right;
     margin-bottom: 16px;
+    cursor: pointer;
+}
+.form-submit:hover {
+    color: #000;
+    background-color: #ccc;
 }
 
 @keyframes modalfadein {
@@ -371,4 +410,7 @@ color: #fff;
         opacity: 1;
 transform: translateY(0);
     }
+}
+.map-section img {
+    width: 100%;
 }
